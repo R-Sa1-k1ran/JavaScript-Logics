@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript assignment 1</title>
+    <script>
+        //first question
+        let i=parseInt(prompt(" Please enter the time between 0 and 23"));
+         if(i<12){
+            alert(`it's ${i} o'clock,  Good Morning `)
+        }else if(i>=12 && i<16){
+            alert(`it's ${i}pm,  Good Afternoon`)
+        }else if(i>=16 && i<21){
+            alert(`it's ${i}pm,  Good Evening`)
+        }else{
+            alert(`it's ${i}pm,  Good Night`)
+        }
+
+        
+        // second question
+        function num(a,b){
+                if(a>b){
+                    document.write(`${a} is greater than ${b} and `)
+                }else if(a<b){
+                    document.write(`${b} is greater than ${a} and`)
+                }else{
+                    document.write(`${a} is equal to ${b} and`)
+                }
+            }  
+            num(5,8);
+            num(46,37);
+            num(65,65);
+        
+
+        //third question
+            let c=parseInt(prompt("enter a number"));
+            if(c>=0){
+                document.write(`${c} is a positive number`);
+            }else if(c<0){
+                document.write(`${c} is a negative number`);
+            }else {
+                 document.write(`${c} is equal to zero`)
+                  }
+        
+
+        // fourth question
+            let numbers=[7,8,38,-9,21,74,0,-62,-23]
+            for(let i=0;i<numbers.length;i++){
+                if(numbers[i]>0){
+                    console.log(`${numbers[i]} is positive numbers`);
+                }else if(numbers[i]<0){
+                    console.log(`${numbers[i]} is negative numbers`)
+                }else{
+                    console.log(`${numbers[i]} is equal to zero`)
+                } 
+            }
+
+            //fifth question
+             for(let i=0;i<=15;i++){
+                if(i%2===0){
+                   console.log(`${i} is an even number`) 
+                }else{
+                    console.log(`${i} is an odd number`)
+                }
+             }
+
+             //sixth question
+              let t=parseInt(prompt("enter telugu language marks"));
+              let h=parseInt(prompt("enter hindi language marks"));
+              let e=parseInt(prompt("enter english language marks"));
+              let m=parseInt(prompt("enter mathematics language marks"));
+              let s=parseInt(prompt("enter science language marks"));
+              let so=parseInt(prompt("enter social studies language marks"));   
+             function subjects(t,h,e,m,s,so){
+                avg=(t+h+e+m+s+so)/6;
+                document.write(`the average of the marks are ${avg}`)
+             }
+             subjects(t,h,e,m,s,so);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
